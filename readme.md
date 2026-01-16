@@ -59,44 +59,30 @@ This integration focuses on two primary Luminar feeds:
   - Click `Microsoft Graph` button
   - Search `indicator` and click on the `ThreatIndicators.ReadWrite.OwnedBy`, click `Add permissions` button below.
   - Click on `Grant admin consent`
-
- ![05](Images/05.png) 
-
+![05](Images/05.png) 
 - We need secrets to access programmatically. For creating secrets
   - Click `Manage->Certificates & secrets` tab
   - Click `Client secrets` tab
   - Click `New client secret` button
   - Enter description and set expiration date for secret
-
 ![06](Images/06.png)
-
 - Use Secret `Value` to configure connector.
-  
- ![07](Images/07.png)
+  ![07](Images/07.png)
 
 ## Provide Permission To App Created Above
 
 - Open [https://portal.azure.com/](https://portal.azure.com) and search `Microsoft Sentinel` service.
 - Goto `Settings` -> `Workspace Setting`
-
 ![08](Images/08.png)
-
 - Goto `Access Control(IAM)` -> `Add`
-
 ![09](Images/09.png)
-
 - Search for `Microsoft Sentinel Contributor` and click `Next`
-
 ![10](Images/10.png)
-
 - Select `User,group or service principle` and click on `select members`.
 - Search for the app name created above and click on `select`.
 - Click on `Next`
-
 ![11](Images/11.png)
-
 - Click on `Review + assign`
-
 ![12](Images/12.png)
 
 # Install Luminar Threat Intelligence Connector from Sentinel content hub
@@ -109,11 +95,10 @@ This integration focuses on two primary Luminar feeds:
 ![15](Images/15.png)
 - After the connector is installed, click on Manage
 ![16](Images/16.png)
--Click on Open Connector page
+- Click on Open Connector page
 ![17](Images/17.png)
--Click on Deploy to Azure (Flex or Premium)
+- Click on Deploy to Azure (Flex or Premium)
 ![18](Images/18.png)
-
 - It will redirect to feed Configuration page.
   ![19](Images/19.png)
 - Please provide the values accordingly.
@@ -134,10 +119,8 @@ This integration focuses on two primary Luminar feeds:
 |Time Interval| Connector to run in intervals |
 | App Insights Workspace Resource ID | Go to `Log Analytics workspace` -> `Settings` -> `Properties`, Copy `Resource ID` |
 
-![40](Images/40.png)
-
 - Once you provide the above values, please click on `Review + create` button.
 
 - Once the threat intelligence function app connector is succussefully deployed, the connector saves the IOCS into the Microsoft Sentinel Threat Intelligence.
 
-![ti_feed](Images/ti_feed.png)
+![20](Images/20.png)
