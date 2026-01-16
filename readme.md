@@ -44,15 +44,15 @@ This integration focuses on two primary Luminar feeds:
 
 - Click `Add->App registration`.
 
-![02a](Images/02a.png)
+![02](Images/02.png)
 
 - Enter the name of application and select supported account types and click on `Register`.
 
-![02](Images/02.png)
+![03](Images/03.png)
 
 - In the application overview you can see `Application Name`, `Application ID` and `Tenant ID`.
  
-![03](Images/03.png)
+![04](Images/04.png)
 
 - After creating the application, we need to set API permissions for connector. For this purpose,
   - Click `Manage->API permissions` tab
@@ -60,7 +60,7 @@ This integration focuses on two primary Luminar feeds:
   - Search `indicator` and click on the `ThreatIndicators.ReadWrite.OwnedBy`, click `Add permissions` button below.
   - Click on `Grant admin consent`
 
- ![app_per](Images/app_per.png) 
+ ![05](Images/05.png) 
 
 - We need secrets to access programmatically. For creating secrets
   - Click `Manage->Certificates & secrets` tab
@@ -68,53 +68,54 @@ This integration focuses on two primary Luminar feeds:
   - Click `New client secret` button
   - Enter description and set expiration date for secret
 
-![10](Images/10.png)
+![06](Images/06.png)
 
 - Use Secret `Value` to configure connector.
   
- ![11](Images/11.png)
+ ![07](Images/07.png)
 
 ## Provide Permission To App Created Above
 
 - Open [https://portal.azure.com/](https://portal.azure.com) and search `Microsoft Sentinel` service.
 - Goto `Settings` -> `Workspace Setting`
 
-![04](Images/04.png)
+![08](Images/08.png)
 
 - Goto `Access Control(IAM)` -> `Add`
 
-![05](Images/05.png)
+![09](Images/09.png)
 
 - Search for `Microsoft Sentinel Contributor` and click `Next`
 
-![06](Images/06.png)
+![10](Images/10.png)
 
 - Select `User,group or service principle` and click on `select members`.
 - Search for the app name created above and click on `select`.
 - Click on `Next`
 
-![07](Images/07.png)
+![11](Images/11.png)
 
 - Click on `Review + assign`
 
-![08](Images/08.png)
+![12](Images/12.png)
 
 # Install Luminar Threat Intelligence Connector from Sentinel content hub
 
 
 - Go to Microsoft Sentinel -> Select created workspace -> Content management -> Content hub
-![09](Images/09.png)
+![13](Images/13.png)
+![14](Images/14.png)
 - Click Review+Create
-![09](Images/09.png)
+![15](Images/15.png)
 - After the connector is installed, click on Manage
-![09](Images/09.png)
+![16](Images/16.png)
 -Click on Open Connector page
-![09](Images/09.png)
+![17](Images/17.png)
 -Click on Deploy to Azure (Flex or Premium)
-![09](Images/09.png)
+![18](Images/18.png)
 
 - It will redirect to feed Configuration page.
-  ![09](Images/09.png)
+  ![19](Images/19.png)
 - Please provide the values accordingly.
   
 |       Fields       |   Description |
